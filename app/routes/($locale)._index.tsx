@@ -93,7 +93,7 @@ function RecommendedProducts({
 }) {
   return (
     <div className="recommended-products">
-      <h2>Best- Seller</h2>
+      <h2>Best- product Seller</h2>
       <Suspense fallback={<div>Loading...</div>}>
         <Await resolve={products}>
           {(response) => (
