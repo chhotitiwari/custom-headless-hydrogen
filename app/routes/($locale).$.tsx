@@ -1,6 +1,7 @@
-import type {Route} from './+types/$';
+// import type { Route } from './+types/$';
+import type { Route} from './+types/($locale).$';
 
-export async function loader({request}: Route.LoaderArgs) {
+export async function loader({ request }: Route.LoaderArgs) {
   throw new Response(`${new URL(request.url).pathname} not found`, {
     status: 404,
   });
@@ -9,4 +10,3 @@ export async function loader({request}: Route.LoaderArgs) {
 export default function CatchAllPage() {
   return null;
 }
-($locale).tsx
